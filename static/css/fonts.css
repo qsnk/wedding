@@ -1,0 +1,21 @@
+/*Great vibes (Красивый шрифт для надписей)*/
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Rampart One (Большие надписи, концовка)*/
+.rampart-one-regular {
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*OpenSans (Для обычного текста)*/
+.comforta {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
