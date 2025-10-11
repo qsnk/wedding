@@ -8,8 +8,7 @@
     <!--Шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rampart+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rampart+One&display=swap" rel="stylesheet">
     <!--Скрипты-->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -36,27 +35,96 @@
         <!--Вступление-->
         <div class="my-8 items-center text-center fade-in-on-scroll opacity-0 translate-y-5">
             <h3 class="text-3xl">ДОРОГИЕ ГОСТИ</h3>
-            <p class="comforta">Мы так долго ждали этого момента — возможности разделить с вами один из самых важных и счастливых дней в нашей жизни. С огромной радостью приглашаем вас на нашу свадьбу — день, когда мы официально станем семьей и начнем новую главу вместе.</p>
-            <p class="comforta mb-8">Ваше присутствие сделает наш праздник ещё теплее, искреннее и незабываемее. Будем счастливы видеть вас рядом в этот особенный день!</p>
-            <h2 class="text-4xl">09.09.2026</h2>
+            <div class="container p-8 max-w-2xl mx-auto">
+                <p class="comforta">Мы так долго ждали этого момента — возможности разделить с вами один из самых важных и счастливых дней в нашей жизни. С огромной радостью приглашаем вас на нашу свадьбу — день, когда мы официально станем семьей и начнем новую главу вместе.</p>
+            </div>
+            <h2 class="text-6xl great-vibes-regular">09.09.2026</h2>
             <div class="mt-4 flex justify-center">
                 <img class="h-48 w-96 rounded-xl object-cover" src="static/img/photo_2025-10-06_22-03-46.jpg">
             </div>
+            <p class="p-8 comforta">Пожалуйста, подтвердите свое присутствие, заполнив форму ниже</p>
+            <a href="https://forms.yandex.ru/u/68e95cc990fa7b3202e30c90" target="_blank">
+                <button class="comforta transition duration-300 ease-in-out bg-green-300 rounded-md p-2 hover:-translate-y-1 hover:scale-110 text-yellow-950">Заполнить анкету</button>
+            </a>
         </div>
 
-        <!--Анкета-->
-        <div class="my-8 text-center fade-in-on-scroll opacity-0 translate-y-5">
-            <h3 class="text-3xl">АНКЕТА</h3>
-            <p class="mb-4">*наводящий текст к анкете бла бла *</p>
-            <a href="https://forms.yandex.ru/u/68e95cc990fa7b3202e30c90" target="_blank">
-                <button class="transition duration-300 ease-in-out bg-green-300 rounded-md p-2 hover:-translate-y-1 hover:scale-110 text-yellow-950">Заполнить анкету</button>
-            </a>
+        <div class="mt-4 flex justify-center">
+            <img class="object-cover" src="static/img/nature2.jpg">
         </div>
 
         <!--Программа дня-->
         <div class="my-8 text-center fade-in-on-scroll opacity-0 translate-y-5">
             <h3 class="text-3xl">ПРОГРАММА ДНЯ</h3>
-            <div class="border-2 border-green-600 p-8 mt-4">
+
+            <!-- Контейнер с фоновой картинкой и наложенным текстом -->
+                <div class="relative rounded-xl overflow-hidden p-8">
+                    <!-- Фоновое изображение -->
+                    <img
+                        src="static/img/day_schedule.jpg"
+                        alt="Фон программы дня"
+                        class="w-full h-auto max-h-[600px] object-cover"
+                    />
+
+                    <!-- Наложенный текст -->
+                    <div class="absolute inset-0 flex flex-col justify-center items-center">
+                        <div class="max-w-4xl w-full space-y-6">
+                            <div class="flex flex-col items-center text-center my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24">
+                                    <path d="M14 13a3.954 3.954 0 0 0 .142 1H9.858A3.954 3.954 0 0 0 10 13zm-3.5-4h3a2.486 2.486 0 0 1 1.945.949 3.992 3.992 0 0 1 .839-.547A3.485 3.485 0 0 0 13.5 8h-3a3.485 3.485 0 0 0-2.784 1.402 3.992 3.992 0 0 1 .84.547A2.486 2.486 0 0 1 10.5 9zM9 4a3 3 0 1 1 3 3 3.003 3.003 0 0 1-3-3zm1 0a2 2 0 1 0 2-2 2.002 2.002 0 0 0-2 2zM4.5 17h3a3.504 3.504 0 0 1 3.5 3.5V23H1v-2.5A3.504 3.504 0 0 1 4.5 17zm0 1A2.503 2.503 0 0 0 2 20.5V22h8v-1.5A2.503 2.503 0 0 0 7.5 18zM6 16a3 3 0 1 1 3-3 3.003 3.003 0 0 1-3 3zm0-1a2 2 0 1 0-2-2 2.002 2.002 0 0 0 2 2zm17 5.5V23H13v-2.5a3.504 3.504 0 0 1 3.5-3.5h3a3.504 3.504 0 0 1 3.5 3.5zm-1 0a2.503 2.503 0 0 0-2.5-2.5h-3a2.503 2.503 0 0 0-2.5 2.5V22h8zM21 13a3 3 0 1 1-3-3 3.003 3.003 0 0 1 3 3zm-1 0a2 2 0 1 0-2 2 2.002 2.002 0 0 0 2-2z"/>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                </svg>
+                                <p class="text-2xl font-bold">12:00</p>
+                                <p class="text-lg">Сбор гостей</p>
+                            </div>
+
+                            <div class="flex flex-col items-center text-center my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24">
+                                    <path d="M18 9H4V8h14zm-5 3H4v1h9zm8-8v9h-1V5H2v13h9v1H1V4zm2.07 11.637l-.707-.707-5.863 5.863-2.863-2.863-.707.707 3.57 3.57z"/>
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                </svg>
+                                <p class="text-2xl font-bold">13:00</p>
+                                <p class="text-lg">Регистрация</p>
+                            </div>
+
+                            <div class="flex flex-col items-center text-center my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="w-10 h-10" viewBox="0 -3 32 32" preserveAspectRatio="xMidYMid">
+                                    <path d="M29.000,26.000 L3.000,26.000 C1.346,26.000 -0.000,24.654 -0.000,23.000 L-0.000,7.000 C-0.000,5.346 1.346,4.000 3.000,4.000 L7.381,4.000 L9.102,0.554 C9.270,0.214 9.617,0.000 9.996,0.000 L22.006,0.000 C22.385,0.000 22.731,0.214 22.901,0.554 L24.619,4.000 L29.000,4.000 C30.654,4.000 32.000,5.346 32.000,7.000 L32.000,23.000 C32.000,24.654 30.654,26.000 29.000,26.000 ZM30.000,7.000 C30.000,6.449 29.551,6.000 29.000,6.000 L24.000,6.000 C23.950,6.000 23.907,5.979 23.859,5.972 C23.788,5.961 23.717,5.955 23.649,5.929 C23.588,5.906 23.537,5.869 23.482,5.834 C23.428,5.801 23.373,5.773 23.326,5.729 C23.273,5.680 23.235,5.620 23.194,5.560 C23.166,5.520 23.127,5.491 23.105,5.446 L21.387,2.000 L10.615,2.000 L8.895,5.446 C8.848,5.541 8.785,5.623 8.715,5.695 C8.701,5.710 8.684,5.719 8.669,5.733 C8.597,5.798 8.518,5.851 8.432,5.892 C8.403,5.907 8.375,5.919 8.344,5.931 C8.234,5.971 8.120,5.999 8.002,6.000 C8.001,6.000 8.001,6.000 8.000,6.000 L3.000,6.000 C2.449,6.000 2.000,6.449 2.000,7.000 L2.000,23.000 C2.000,23.551 2.449,24.000 3.000,24.000 L29.000,24.000 C29.551,24.000 30.000,23.551 30.000,23.000 L30.000,7.000 ZM16.000,21.000 C12.140,21.000 9.000,17.860 9.000,14.000 C9.000,10.140 12.140,7.000 16.000,7.000 C19.860,7.000 23.000,10.140 23.000,14.000 C23.000,17.860 19.860,21.000 16.000,21.000 ZM16.000,9.000 C13.243,9.000 11.000,11.243 11.000,14.000 C11.000,16.757 13.243,19.000 16.000,19.000 C18.757,19.000 21.000,16.757 21.000,14.000 C21.000,11.243 18.757,9.000 16.000,9.000 Z"/>
+                                </svg>
+                                <p class="text-2xl font-bold">14:00</p>
+                                <p class="text-lg">Фотосессия</p>
+                            </div>
+
+                            <div class="flex flex-col items-center text-center my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" class="w-10 h-10" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                      		<path d="M476.767,423.726h-0.302c-3.815-96.362-70.396-176.996-158.672-202.996c0-0.015,0-0.026,0-0.039    c0-34.069-27.72-61.793-61.793-61.793s-61.793,27.724-61.793,61.793c0,0.013,0.008,0.024,0.008,0.039    c-88.994,26-154.865,106.633-158.68,202.996h-0.302C15.806,423.726,0,439.562,0,459.036c0,19.474,15.806,35.31,35.233,35.31    h441.535c19.427,0,35.233-15.836,35.233-35.31C512,439.562,496.194,423.726,476.767,423.726z M256,176.553    c22.807,0,41.41,17.455,43.686,39.67c-14.127-2.847-28.733-4.36-43.686-4.36c-14.954,0-29.559,1.513-43.686,4.36    C214.59,194.008,233.193,176.553,256,176.553z M256,229.519c108.996,0,198.207,86.336,202.845,194.207H97.551    c4.609-78.634,69.851-141.241,149.622-141.241c4.875,0,8.828-3.948,8.828-8.828s-3.953-8.828-8.828-8.828    c-89.503,0-162.643,70.528-167.277,158.897h-26.74C57.793,315.855,147.004,229.519,256,229.519z M476.767,476.691H35.233    c-9.694,0-17.578-7.922-17.578-17.655c0-9.733,7.884-17.655,17.578-17.655h8.905h423.724h8.905    c9.694,0,17.578,7.922,17.578,17.655C494.345,468.769,486.461,476.691,476.767,476.691z"/>
+                                       	</g>
+                                    </g>
+                                    <g>
+                                       	<g>
+                                      		<path d="M144.724,179.139c-0.211-0.216-21.207-21.604-7.724-41.828c20.681-31.026,0.853-61.474,0-62.759    c-2.707-4.052-8.185-5.147-12.241-2.448c-4.056,2.707-5.151,8.181-2.448,12.241c0.142,0.215,14.224,21.836,0,43.172    c-17.142,25.707-1,53.172,9.931,64.103c1.724,1.724,3.983,2.586,6.241,2.586c2.258,0,4.517-0.862,6.241-2.586    C148.172,188.174,148.172,182.588,144.724,179.139z"/>
+                                       	</g>
+                                    </g>
+                                    <g>
+                                       	<g>
+                                      		<path d="M268.31,126.174c-0.211-0.216-21.207-21.604-7.724-41.828c20.681-31.026,0.853-61.474,0-62.759    c-2.711-4.06-8.19-5.155-12.241-2.448c-4.056,2.707-5.151,8.181-2.448,12.241c0.142,0.215,14.224,21.836,0,43.172    c-17.142,25.707-1,53.172,9.931,64.103c1.724,1.724,3.983,2.586,6.241,2.586s4.517-0.862,6.241-2.586    C271.759,135.208,271.759,129.622,268.31,126.174z"/>
+                                       	</g>
+                                    </g>
+                                    <g>
+                                       	<g>
+                                      		<path d="M391.896,196.795c-0.211-0.216-21.207-21.604-7.724-41.828c20.681-31.026,0.853-61.474,0-62.759    c-2.711-4.06-8.194-5.155-12.241-2.448c-4.056,2.707-5.151,8.181-2.448,12.241c0.142,0.215,14.224,21.836,0,43.172    c-17.142,25.707-1,53.172,9.931,64.103c1.724,1.724,3.983,2.586,6.241,2.586c2.259,0,4.517-0.862,6.241-2.586    C395.345,205.829,395.345,200.243,391.896,196.795z"/>
+                                       	</g>
+                                    </g>
+                                </svg>
+                                <p class="text-2xl font-bold">15:00</p>
+                                <p class="text-lg">Банкет</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!--<div class="border-2 border-green-600 p-8 mt-4">
                 <div class="flex flex-col items-center text-center my-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20" viewBox="0 0 24 24">
                         <path d="M14 13a3.954 3.954 0 0 0 .142 1H9.858A3.954 3.954 0 0 0 10 13zm-3.5-4h3a2.486 2.486 0 0 1 1.945.949 3.992 3.992 0 0 1 .839-.547A3.485 3.485 0 0 0 13.5 8h-3a3.485 3.485 0 0 0-2.784 1.402 3.992 3.992 0 0 1 .84.547A2.486 2.486 0 0 1 10.5 9zM9 4a3 3 0 1 1 3 3 3.003 3.003 0 0 1-3-3zm1 0a2 2 0 1 0 2-2 2.002 2.002 0 0 0-2 2zM4.5 17h3a3.504 3.504 0 0 1 3.5 3.5V23H1v-2.5A3.504 3.504 0 0 1 4.5 17zm0 1A2.503 2.503 0 0 0 2 20.5V22h8v-1.5A2.503 2.503 0 0 0 7.5 18zM6 16a3 3 0 1 1 3-3 3.003 3.003 0 0 1-3 3zm0-1a2 2 0 1 0-2-2 2.002 2.002 0 0 0 2 2zm17 5.5V23H13v-2.5a3.504 3.504 0 0 1 3.5-3.5h3a3.504 3.504 0 0 1 3.5 3.5zm-1 0a2.503 2.503 0 0 0-2.5-2.5h-3a2.503 2.503 0 0 0-2.5 2.5V22h8zM21 13a3 3 0 1 1-3-3 3.003 3.003 0 0 1 3 3zm-1 0a2 2 0 1 0-2 2 2.002 2.002 0 0 0 2-2z"/>
@@ -109,44 +177,63 @@
                     <p class="text-2xl">15:00</p>
                     <p class="text-lg">Банкет</p>
                 </div>
-            </div>
+            </div>-->
         </div>
 
         <!--Место проведения-->
         <div class="my-8 items-center text-center">
             <h3 class="text-3xl">МЕСТО ПРОВЕДЕНИЯ</h3>
-            <p class="comforta">Для празднования нашей свадьбы была выбрана площадка ….</p>
-            <p class="comforta">Вас ждет уникальное времяпровождение в приятном окружении и с чудесными природными видами</p>
-            <p class="comforta">Г. Москва адрес написать</p>
-            <p class="comforta">До места проведения мероприятия будет предусмотрен автобус. Информацию о нем мы сообщим дополнительно. </p>
+            <div class="container p-8">
+                <p class="comforta">Для празднования нашей свадьбы была выбрана площадка ….</p>
+                <br/>
+                <p class="comforta">Г. Москва адрес написать</p>
+                <p class="comforta">До места проведения мероприятия будет предусмотрен автобус. Информацию о нем мы сообщим дополнительно</p>
+            </div>
+        </div>
+
+        <div class="mt-4 flex justify-center">
+            <img class="object-cover" src="static/img/nature.jpg">
         </div>
 
         <!--Дресс-код-->
         <div class="my-8 items-center text-center">
             <h3 class="text-3xl">ДРЕСС-КОД</h3>
-            <p class="comforta">Мы очень ждем и готовимся к нашему незабываемому дню!</p>
-            <p class="comforta">Поддержите нас вашими улыбками и объятиями, а также красивыми нарядами в палитре мероприятия.</p>
+            <div class="mt-4 flex justify-center">
+                <img class="object-cover" src="static/img/leaves-Photoroom.png">
+            </div>
+            <div class="container p-8">
+                <p class="comforta">Мы очень ждем и готовимся к нашему незабываемому дню!</p>
+                <p class="comforta">Поддержите нас вашими улыбками и объятиями, а также красивыми нарядами в палитре мероприятия</p>
+            </div>
         </div>
 
         <!--Пожелания-->
         <div class="my-8 p-3 items-center text-center">
             <h3 class="text-3xl">ПОЖЕЛАНИЯ</h3>
-            <p class="comforta">Мы очень ценим Вашу заботу и внимание и будем рады любому подарку! И совсем не важно, в какой конверт вы его упакуете)</p>
+            <div class="container p-8">
+                <p class="comforta">Мы очень ценим Вашу заботу и внимание и будем рады любому подарку! И совсем не важно, в какой конверт вы его упакуете)</p>
+            </div>
         </div>
 
         <!--Фотоальбом-->
         <div class="my-8 items-center text-center fade-in-on-scroll opacity-0 translate-y-5">
             <h3 class="text-3xl">ФОТОАЛЬБОМ</h3>
-            <p class="mb-4">Присоединяйтесь к нашему чату в телеграмме и делитесь фото, видео и воспоминаниями с нашего дня!</p>
-            <a href="https://t.me/+ttu5Ms97-TcxNzgy" target="_blank">
-                <button class="transition duration-300 ease-in-out bg-green-300 rounded-md p-2 hover:-translate-y-1 hover:scale-110 text-yellow-950">Перейти в чат</button>
-            </a>
+            <div class="container p-8">
+                <p class="mb-4">Присоединяйтесь к нашему чату в телеграмме и делитесь фото, видео и воспоминаниями с нашего дня!</p>
+                <a href="https://t.me/+ttu5Ms97-TcxNzgy" target="_blank">
+                    <button class="comforta transition duration-300 ease-in-out bg-green-300 rounded-md p-2 hover:-translate-y-1 hover:scale-110 text-yellow-950">Перейти в чат</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-4 flex justify-center">
+            <img class="w-64 h-52 object-fit" src="static/img/rock-Photoroom.png">
         </div>
 
         <!--Обратный отчет-->
         <div class="my-8 items-center text-center fade-in-on-scroll opacity-0 translate-y-5">
-            <h3 class="text-3xl">ОБРАТНЫЙ ОТЧЕТ</h3>
-            <h4 id="timer" class="text-2xl"></h4>
+            <h3 class="text-3xl">Увидимся через...</h3>
+            <p id="timer" class="text-7xl"></p>
         </div>
 
         <script src="static/js/index.js"></script>
