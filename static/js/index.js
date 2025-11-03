@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let targetDate = new Date('2026-09-09');
     let remainingDays = Math.round((targetDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24));
     let day = getDaysWord(remainingDays);
-    timer.innerHTML = `<span class="rampart-one-regular">${remainingDays}</span> <span class="text-4xl comforta">${day}</span>`;
+    timer.innerHTML = `<span class="rampart-one-regular">${remainingDays}</span> <span class="text-4xl cormorant">${day}</span>`;
 })
 
 function getDaysWord(days) {
