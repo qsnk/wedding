@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let timer = document.querySelector("#timer");
-    let currentDate = new Date();
-    let targetDate = new Date('2026-09-09');
-    let remainingDays = Math.round((targetDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24));
-    let day = getDaysWord(remainingDays);
-    timer.innerHTML = `<span class="rampart-one-regular">${remainingDays}</span> <span class="text-4xl cormorant">${day}</span>`;
+  let timer = document.querySelector("#timer");
+  let currentDate = new Date();
+  let targetDate = new Date('2026-09-09');
+  let remainingDays = clamp(Math.round((targetDate.getTime() - currentDate.getTime()) / (1000 * 60 * 60 * 24)), 0, Number.MAX_SAFE_INTEGER);
+  let day = getDaysWord(remainingDays);
+  timer.innerHTML = `<span class="rampart-one-regular">${remainingDays}</span> <span class="text-4xl cormorant">${day}</span>`;
 })
 
 function getDaysWord(days) {
@@ -20,4 +20,11 @@ function getDaysWord(days) {
       return 'день';
   }
   return 'дней';
+}
+
+function clamp(current, min, max) {
+  if (current >= min && current <= max) return current;
+  if (current < min) return min;
+  if (current > max) return max;
+  return current;
 }
